@@ -1,0 +1,25 @@
+[[plugins]]
+repo = 'freeo/vim-kalisi'
+hook_add = '''
+  set background=light
+  colorscheme kalisi
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+depends = ['vim-airline/vim-airline-themes']
+hook_add = '''
+  let g:airline_theme = 'papercolor'
+  let g:airline#extensions#tabline#enabled = 1
+  let g:airline_powerline_fonts = 1
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'osyo-manga/vim-precious'
+depends = ['context_filetype.vim']
